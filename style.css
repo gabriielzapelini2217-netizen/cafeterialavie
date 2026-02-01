@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: "Playwrite NZ Basic", cursive;
+     line-height: 1.6;
+     color: #333;  
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #2c1810;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #deb887;
+}
+
+.hero {
+    background: linear-gradient(rgba(44,24,16,0.7), rgba(44,24,16,0.7)), url(https://images.unsplash.com/photo-1495774856032-8b90bbb32b32?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-conteudo h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero-conteudo p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #deb887;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn:hoover {
+    background-color: #f8cc91;
+}
+
+.sobre {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c1810;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666666;
+}
+
+.produtos {
+    padding: 5rem 2rem;
+    background-color: #fff;
+}
+
+.produtos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c1810;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.produtos-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.produto-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.preco {
+    font-weight: bold;
+    color: #deb887;
+    font-size: 1.5rem;
+}
+
+.localizacao {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.localizacao h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c1810;
+}
+
+.contato-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mapa {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mapa iframe {
+    display: block;
+}
+
+.produtos {
+    padding: 60px 0;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #3e2723;
+}
+
+.produtos-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto-card {
+    background: #fff;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+
+.produto-icon img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.produto-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 8px;
+    color: #2e1c18;
+}
+
+.produto-card p {
+    font-size: 0.95rem;
+    padding: 0 15px;
+    color: #555;
+    min-height: 60px;
+}
+
+.preco {
+    display: block;
+    margin: 15px 0 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c1810;
+}
+
+@media (max-width: 768px) {
+    .produto-card {
+        width: 90%;
+    }
+}
+
+
+footer {
+    text-align: center;
+}
+
+.produtos-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto-card {
+    background: #fff;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-8px);
+}
+
+.produto-icon img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.produto-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 8px;
+    text-align: center;
+}
+
+.produto-card p {
+    font-size: 0.95rem;
+    padding: 0 15px;
+    color: #555;
+}
+
+.produto-card .preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c1810;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.produto-card .btn {
+    margin-top: auto;
+    margin: 15px;
+    text-align: center;
+    background: burlywood;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.produto-card .btn:hover {
+    background: burlywood;
+}
+
+@media (max-width: 768px) {
+    .produto-card {
+        width: 90%;
+    }
+}
