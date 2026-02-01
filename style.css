@@ -324,9 +324,9 @@ footer {
     background: burlywood;
 }
 
-@media (max-width: 768px) {
-    .produto-card {
-        width: 90%;
+@media (max-width: 600px) {
+    .galeria-grid img {
+        height: 180px;
     }
 }
 
@@ -344,4 +344,114 @@ footer {
 a {
     text-decoration: none;
     color: #2c1810;
+}
+
+.galeria {
+    padding: 4rem 1rem;
+    background-color: #f6f1e7;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 220px;              /* CONTROLA o tamanho */
+    object-fit: cover;          /* evita distorção */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+.depoimentos {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.depoimentos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.depoimentos blockquote {
+    background: #f6f1e7;
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-style: italic;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.depoimentos span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #5a3e2b;
+}
+
+
+.eventos {
+    padding: 4rem 1rem;
+    background-color: #0f3d2e;
+    color: #fff;
+}
+
+.eventos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.eventos-lista {
+    max-width: 600px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.eventos-lista li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+
+.destaques {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.destaques h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.destaque {
+    background: #f6f1e7;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
